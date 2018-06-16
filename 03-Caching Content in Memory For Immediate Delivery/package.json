@@ -1,0 +1,15 @@
+{
+  "name": "03-caching-content-in-memory-for-immediate-delivery",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start":"nodemon run server.js"
+  },
+  "author": "Roliver Javier Rodriguez",
+  "license": "ISC",
+  "dependencies": {
+    "nodemon": "^1.17.5"
+  }
+}
