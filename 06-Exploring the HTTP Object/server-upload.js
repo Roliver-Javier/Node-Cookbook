@@ -15,7 +15,7 @@ var fs = require('fs'),
 
             case 'GET':
                 response.writeHead(200, {'Content-type': 'text/html'});
-                response.end();
+                response.end(form);
             break;
         }
     }).listen(3001);
