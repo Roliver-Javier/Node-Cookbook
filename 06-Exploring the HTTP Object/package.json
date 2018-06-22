@@ -2,16 +2,17 @@
   "name": "06-exploring-the-http-object",
   "version": "1.0.0",
   "description": "",
-  "main": "server.js",
+  "main": "server-upload.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon run server.js"
+    "start": "nodemon run server-upload.js"
   },
   "author": "Roliver Javier Rodriguez",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.18.3",
     "connect": "^3.6.6",
+    "formidable": "^1.2.1",
     "nodemon": "^1.17.5"
   }
 }
