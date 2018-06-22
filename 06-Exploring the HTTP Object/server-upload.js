@@ -9,7 +9,13 @@ var http = require('http'),
                 var incoming = new formidable.IncomingForm();
                 incoming.uploadDir = 'uploads';
 
-                incoming.on('file', function(field, file){
+                incoming
+                .on('fileBegin', function(field, file){
+                    if(file.name){
+                        file.path += '-'+file.name;
+                    }
+                })
+                .on('file', function(field, file){
                     if(!file.size){ return ;};
                     response.write(file.name + 'received\n');
                 }).on('end', function(){
