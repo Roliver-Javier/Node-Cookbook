@@ -1,6 +1,6 @@
 //Converting an object to xml
 
-var profiles = require('./profiles'),
+var profiles = require('./profiles_enhanced'),
     xml2js = require('xml2js');
 
 var builder = new xml2js.Builder({rootName: 'profiles'});
