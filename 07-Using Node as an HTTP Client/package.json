@@ -2,10 +2,14 @@
   "name": "07-using-node-as-an-http",
   "version": "1.0.0",
   "description": "",
-  "main": "server.js",
+  "main": "fetch.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon run fetch.js"
   },
   "author": "Roliver Javier Rodriguez",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "nodemon": "^1.17.5"
+  }
 }
